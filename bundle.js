@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/common.css":
-/*!******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/common.css ***!
-  \******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -131,7 +131,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `*,*::before,*::after{
     padding: 0.3em;
     border: solid 3px #7c6a06;
     border-radius: 10px;
-}`, "",{"version":3,"sources":["webpack://./src/css/common.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,UAAU;IACV,SAAS;;AAEb;;AAEA,yBAAyB;AACzB;IACI,sBAAsB;IACtB,uBAAuB;IACvB,uBAAuB;IACvB,uBAAuB;;AAE3B;;AAEA;EACE,uBAAuB;EACvB,4CAAiD;EACjD,gBAAgB;AAClB;;AAEA;IACI,oDAAoD;IACpD,aAAa;IACb,YAAY;IACZ,0BAA0B;IAC1B,qCAAqC;IACrC,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;;IAEI,aAAa;IACb,6CAA6C;IAC7C,gDAAgD;IAChD,4BAA4B;IAC5B,mBAAmB;;;AAGvB;AACA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;AACA;;IAEI,qCAAqC;AACzC;AACA;;IAEI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,YAAY;IACZ,QAAQ;AACZ;AACA;;IAEI,WAAW;IACX,YAAY;IACZ,cAAc;IACd,iBAAiB;IACjB,qCAAqC;IACrC,kBAAkB;IAClB,uBAAuB;IACvB,cAAc;AAClB;;;AAGA;;IAEI,yDAAuD;IACvD,4BAA4B;IAC5B,qBAAqB;IACrB,cAAc;IACd,yBAAyB;IACzB,mBAAmB;AACvB","sourcesContent":["*,*::before,*::after{\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0; \n\n}\n\n/**** CSS variables *****/\n:root{\n    --main-color-1:#F7F5F3;\n    --main-color-2: #EEE0CB;\n    --main-color-3: #839788;\n    --main-color-4: #000000;\n\n}\n\n@font-face {\n  font-family: 'maPolice'; \n  src: url('../font/Pacifico/Pacifico-Regular.ttf');\n  font-weight: 100;\n}\n\n#app {\n    font-family: 'maPolice',Arial, Helvetica, sans-serif;\n    height: 100vh;\n    width: 100vw;\n    color: var(--main-color-2);\n    background-color: var(--main-color-3);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 2em;\n}\n\n.title{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5em;\n}\n\n.board\n{\n    display: grid;\n    grid-template-rows: repeat(8,minmax(2em,4em));\n    grid-template-columns: repeat(8,minmax(2em,4em));\n    border: 0.75em solid #7c6a06;\n    border-radius: 10px;\n    \n    \n}\n.white\n{\n    background-color:var(--main-color-1) ;\n    padding: 1em;\n    color: #000000; \n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.black\n{\n    background-color: var(--main-color-4);\n    padding: 1em;\n    color: #F7F5F3;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.start\n{\n    background-color: var(--main-color-3);\n}\n.gestion\n{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: black;\n    gap: 1em;\n}\n.btn\n{\n    width: auto;\n    height: auto;\n    padding: 0.3em;\n    line-height: none;\n    background-color: var(--main-color-2);\n    border-radius: 5px;\n    font-family: \"maPolice\";\n    font-size: 1em;\n}\n\n\n.knight-icon\n{\n    background-image: url('../icon/knight-icon-border.png');\n    background-repeat: no-repeat;\n    background-size:cover;\n    padding: 0.3em;\n    border: solid 3px #7c6a06;\n    border-radius: 10px;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,UAAU;IACV,SAAS;;AAEb;;AAEA,yBAAyB;AACzB;IACI,sBAAsB;IACtB,uBAAuB;IACvB,uBAAuB;IACvB,uBAAuB;;AAE3B;;AAEA;EACE,uBAAuB;EACvB,4CAAiD;EACjD,gBAAgB;AAClB;;AAEA;IACI,oDAAoD;IACpD,aAAa;IACb,YAAY;IACZ,0BAA0B;IAC1B,qCAAqC;IACrC,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;;IAEI,aAAa;IACb,6CAA6C;IAC7C,gDAAgD;IAChD,4BAA4B;IAC5B,mBAAmB;;;AAGvB;AACA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;AACA;;IAEI,qCAAqC;AACzC;AACA;;IAEI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,YAAY;IACZ,QAAQ;AACZ;AACA;;IAEI,WAAW;IACX,YAAY;IACZ,cAAc;IACd,iBAAiB;IACjB,qCAAqC;IACrC,kBAAkB;IAClB,uBAAuB;IACvB,cAAc;AAClB;;;AAGA;;IAEI,yDAAuD;IACvD,4BAA4B;IAC5B,qBAAqB;IACrB,cAAc;IACd,yBAAyB;IACzB,mBAAmB;AACvB","sourcesContent":["*,*::before,*::after{\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0; \n\n}\n\n/**** CSS variables *****/\n:root{\n    --main-color-1:#F7F5F3;\n    --main-color-2: #EEE0CB;\n    --main-color-3: #839788;\n    --main-color-4: #000000;\n\n}\n\n@font-face {\n  font-family: 'maPolice'; \n  src: url('../font/Pacifico/Pacifico-Regular.ttf');\n  font-weight: 100;\n}\n\n#app {\n    font-family: 'maPolice',Arial, Helvetica, sans-serif;\n    height: 100vh;\n    width: 100vw;\n    color: var(--main-color-2);\n    background-color: var(--main-color-3);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 2em;\n}\n\n.title{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5em;\n}\n\n.board\n{\n    display: grid;\n    grid-template-rows: repeat(8,minmax(2em,4em));\n    grid-template-columns: repeat(8,minmax(2em,4em));\n    border: 0.75em solid #7c6a06;\n    border-radius: 10px;\n    \n    \n}\n.white\n{\n    background-color:var(--main-color-1) ;\n    padding: 1em;\n    color: #000000; \n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.black\n{\n    background-color: var(--main-color-4);\n    padding: 1em;\n    color: #F7F5F3;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.start\n{\n    background-color: var(--main-color-3);\n}\n.gestion\n{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: black;\n    gap: 1em;\n}\n.btn\n{\n    width: auto;\n    height: auto;\n    padding: 0.3em;\n    line-height: none;\n    background-color: var(--main-color-2);\n    border-radius: 5px;\n    font-family: \"maPolice\";\n    font-size: 1em;\n}\n\n\n.knight-icon\n{\n    background-image: url('../icon/knight-icon-border.png');\n    background-repeat: no-repeat;\n    background-size:cover;\n    padding: 0.3em;\n    border: solid 3px #7c6a06;\n    border-radius: 10px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -292,10 +292,10 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/css/common.css":
-/*!****************************!*\
-  !*** ./src/css/common.css ***!
-  \****************************/
+/***/ "./src/css/style.css":
+/*!***************************!*\
+  !*** ./src/css/style.css ***!
+  \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_common_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./common.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/common.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./style.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css");
 
       
       
@@ -336,12 +336,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_common_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_common_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_common_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_common_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -1233,7 +1233,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logic_logic_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logic/logic.js */ "./src/logic/logic.js");
 /* harmony import */ var _Class_Node__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Class/Node */ "./src/Class/Node.js");
 /* harmony import */ var _Class_Graph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Class/Graph */ "./src/Class/Graph.js");
-/* harmony import */ var _css_common_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/common.css */ "./src/css/common.css");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
 
 
 
