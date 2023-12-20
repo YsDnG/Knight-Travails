@@ -1,0 +1,29 @@
+{
+  "name": "knight-travails",
+  "version": "1.0.0",
+  "description": "exploring the movement of a chess knight on a standard 8x8 chessboard.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YsDnG/Knight-Travails.git"
+  },
+  "author": "YsDnG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YsDnG/Knight-Travails/issues"
+  },
+  "homepage": "https://github.com/YsDnG/Knight-Travails#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.0",
+    "html-loader": "^4.2.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
