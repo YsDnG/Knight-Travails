@@ -534,6 +534,7 @@ __webpack_require__.r(__webpack_exports__);
 let chessGraph = (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_2__.initGraph)();
 let knight = null
 const cases= document.querySelector('.board').querySelectorAll('*')
+
 makeMove();
 
 function makeMove()
@@ -613,6 +614,8 @@ function simulateKnightMoveOnBoard(movement)
 
 
 function reset() {
+    document.querySelector('.btn').removeEventListener('click',reset);
+
   // Supprimez la classe 'knight-icon' et réinitialisez le contenu des éléments
   cases.forEach(element => {
     element.classList.remove('knight-icon', 'start');

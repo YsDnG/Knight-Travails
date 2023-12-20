@@ -10,4 +10,7 @@ Exploring the possible knight moves within a certain number of moves.
 An interactive user interface for selecting the number of moves.
 
 
-
+  <ul>
+    <li> <a  style="font-size:18px; color:black;" href="https://ysdng.github.io/Knight-Travails/"> Live Demo ! </a> </li>
+    <li> <a  style="font-size:18px; color:black;" href="https://github.com/YsDnG/Knight-Travails"> GitHub Source Code here </li>
+  </ul> 
