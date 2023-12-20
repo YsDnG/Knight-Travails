@@ -11,6 +11,7 @@ initPage();
 let chessGraph = initGraph();
 let knight = null
 const cases= document.querySelector('.board').querySelectorAll('*')
+
 makeMove();
 
 function makeMove()
@@ -90,6 +91,8 @@ function simulateKnightMoveOnBoard(movement)
 
 
 function reset() {
+    document.querySelector('.btn').removeEventListener('click',reset);
+
   // Supprimez la classe 'knight-icon' et réinitialisez le contenu des éléments
   cases.forEach(element => {
     element.classList.remove('knight-icon', 'start');
