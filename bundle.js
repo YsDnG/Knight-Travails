@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../font/Pacifico/Pacifico-Regular.ttf */ "./src/font/Pacifico/Pacifico-Regular.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../font/Pacifico-Regular.ttf */ "./src/font/Pacifico-Regular.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../icon/knight-icon-border.png */ "./src/icon/knight-icon-border.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
@@ -51,7 +51,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `*,*::before,*::after{
 }
 
 #app {
-    font-family: 'maPolice',Arial, Helvetica, sans-serif;
+    font-family: 'maPolice';
     height: 100vh;
     width: 100vw;
     color: var(--main-color-2);
@@ -131,7 +131,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `*,*::before,*::after{
     padding: 0.3em;
     border: solid 3px #7c6a06;
     border-radius: 10px;
-}`, "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,UAAU;IACV,SAAS;;AAEb;;AAEA,yBAAyB;AACzB;IACI,sBAAsB;IACtB,uBAAuB;IACvB,uBAAuB;IACvB,uBAAuB;;AAE3B;;AAEA;EACE,uBAAuB;EACvB,4CAAiD;EACjD,gBAAgB;AAClB;;AAEA;IACI,oDAAoD;IACpD,aAAa;IACb,YAAY;IACZ,0BAA0B;IAC1B,qCAAqC;IACrC,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;;IAEI,aAAa;IACb,6CAA6C;IAC7C,gDAAgD;IAChD,4BAA4B;IAC5B,mBAAmB;;;AAGvB;AACA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;AACA;;IAEI,qCAAqC;AACzC;AACA;;IAEI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,YAAY;IACZ,QAAQ;AACZ;AACA;;IAEI,WAAW;IACX,YAAY;IACZ,cAAc;IACd,iBAAiB;IACjB,qCAAqC;IACrC,kBAAkB;IAClB,uBAAuB;IACvB,cAAc;AAClB;;;AAGA;;IAEI,yDAAuD;IACvD,4BAA4B;IAC5B,qBAAqB;IACrB,cAAc;IACd,yBAAyB;IACzB,mBAAmB;AACvB","sourcesContent":["*,*::before,*::after{\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0; \n\n}\n\n/**** CSS variables *****/\n:root{\n    --main-color-1:#F7F5F3;\n    --main-color-2: #EEE0CB;\n    --main-color-3: #839788;\n    --main-color-4: #000000;\n\n}\n\n@font-face {\n  font-family: 'maPolice'; \n  src: url('../font/Pacifico/Pacifico-Regular.ttf');\n  font-weight: 100;\n}\n\n#app {\n    font-family: 'maPolice',Arial, Helvetica, sans-serif;\n    height: 100vh;\n    width: 100vw;\n    color: var(--main-color-2);\n    background-color: var(--main-color-3);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 2em;\n}\n\n.title{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5em;\n}\n\n.board\n{\n    display: grid;\n    grid-template-rows: repeat(8,minmax(2em,4em));\n    grid-template-columns: repeat(8,minmax(2em,4em));\n    border: 0.75em solid #7c6a06;\n    border-radius: 10px;\n    \n    \n}\n.white\n{\n    background-color:var(--main-color-1) ;\n    padding: 1em;\n    color: #000000; \n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.black\n{\n    background-color: var(--main-color-4);\n    padding: 1em;\n    color: #F7F5F3;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.start\n{\n    background-color: var(--main-color-3);\n}\n.gestion\n{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: black;\n    gap: 1em;\n}\n.btn\n{\n    width: auto;\n    height: auto;\n    padding: 0.3em;\n    line-height: none;\n    background-color: var(--main-color-2);\n    border-radius: 5px;\n    font-family: \"maPolice\";\n    font-size: 1em;\n}\n\n\n.knight-icon\n{\n    background-image: url('../icon/knight-icon-border.png');\n    background-repeat: no-repeat;\n    background-size:cover;\n    padding: 0.3em;\n    border: solid 3px #7c6a06;\n    border-radius: 10px;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,UAAU;IACV,SAAS;;AAEb;;AAEA,yBAAyB;AACzB;IACI,sBAAsB;IACtB,uBAAuB;IACvB,uBAAuB;IACvB,uBAAuB;;AAE3B;;AAEA;EACE,uBAAuB;EACvB,4CAAwC;EACxC,gBAAgB;AAClB;;AAEA;IACI,uBAAuB;IACvB,aAAa;IACb,YAAY;IACZ,0BAA0B;IAC1B,qCAAqC;IACrC,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;;IAEI,aAAa;IACb,6CAA6C;IAC7C,gDAAgD;IAChD,4BAA4B;IAC5B,mBAAmB;;;AAGvB;AACA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;;IAEI,qCAAqC;IACrC,YAAY;IACZ,cAAc;IACd,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;AACA;;IAEI,qCAAqC;AACzC;AACA;;IAEI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,YAAY;IACZ,QAAQ;AACZ;AACA;;IAEI,WAAW;IACX,YAAY;IACZ,cAAc;IACd,iBAAiB;IACjB,qCAAqC;IACrC,kBAAkB;IAClB,uBAAuB;IACvB,cAAc;AAClB;;;AAGA;;IAEI,yDAAuD;IACvD,4BAA4B;IAC5B,qBAAqB;IACrB,cAAc;IACd,yBAAyB;IACzB,mBAAmB;AACvB","sourcesContent":["*,*::before,*::after{\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0; \n\n}\n\n/**** CSS variables *****/\n:root{\n    --main-color-1:#F7F5F3;\n    --main-color-2: #EEE0CB;\n    --main-color-3: #839788;\n    --main-color-4: #000000;\n\n}\n\n@font-face {\n  font-family: 'maPolice'; \n  src: url('../font/Pacifico-Regular.ttf');\n  font-weight: 100;\n}\n\n#app {\n    font-family: 'maPolice';\n    height: 100vh;\n    width: 100vw;\n    color: var(--main-color-2);\n    background-color: var(--main-color-3);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 2em;\n}\n\n.title{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 1.5em;\n}\n\n.board\n{\n    display: grid;\n    grid-template-rows: repeat(8,minmax(2em,4em));\n    grid-template-columns: repeat(8,minmax(2em,4em));\n    border: 0.75em solid #7c6a06;\n    border-radius: 10px;\n    \n    \n}\n.white\n{\n    background-color:var(--main-color-1) ;\n    padding: 1em;\n    color: #000000; \n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.black\n{\n    background-color: var(--main-color-4);\n    padding: 1em;\n    color: #F7F5F3;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.start\n{\n    background-color: var(--main-color-3);\n}\n.gestion\n{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: black;\n    gap: 1em;\n}\n.btn\n{\n    width: auto;\n    height: auto;\n    padding: 0.3em;\n    line-height: none;\n    background-color: var(--main-color-2);\n    border-radius: 5px;\n    font-family: \"maPolice\";\n    font-size: 1em;\n}\n\n\n.knight-icon\n{\n    background-image: url('../icon/knight-icon-border.png');\n    background-repeat: no-repeat;\n    background-size:cover;\n    padding: 0.3em;\n    border: solid 3px #7c6a06;\n    border-radius: 10px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1064,13 +1064,13 @@ function initGraph()
 
 /***/ }),
 
-/***/ "./src/font/Pacifico/Pacifico-Regular.ttf":
-/*!************************************************!*\
-  !*** ./src/font/Pacifico/Pacifico-Regular.ttf ***!
-  \************************************************/
+/***/ "./src/font/Pacifico-Regular.ttf":
+/*!***************************************!*\
+  !*** ./src/font/Pacifico-Regular.ttf ***!
+  \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "d1b9e6d181ea46d0e843.ttf";
+module.exports = __webpack_require__.p + "c0d735fc04154e03a691.ttf";
 
 /***/ }),
 
@@ -1228,12 +1228,10 @@ var __webpack_exports__ = {};
   !*** ./src/knight-travails.js ***!
   \********************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Class_Knight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Class/Knight */ "./src/Class/Knight.js");
-/* harmony import */ var _component_cp_init_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/cp-init-page */ "./src/component/cp-init-page.js");
-/* harmony import */ var _logic_logic_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logic/logic.js */ "./src/logic/logic.js");
-/* harmony import */ var _Class_Node__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Class/Node */ "./src/Class/Node.js");
-/* harmony import */ var _Class_Graph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Class/Graph */ "./src/Class/Graph.js");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
+/* harmony import */ var _src_css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/css/style.css */ "./src/css/style.css");
+/* harmony import */ var _Class_Knight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Class/Knight */ "./src/Class/Knight.js");
+/* harmony import */ var _component_cp_init_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/cp-init-page */ "./src/component/cp-init-page.js");
+/* harmony import */ var _logic_logic_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./logic/logic.js */ "./src/logic/logic.js");
 
 
 
@@ -1241,12 +1239,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-(0,_component_cp_init_page__WEBPACK_IMPORTED_MODULE_1__["default"])();
-let chessGraph = (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_2__.initGraph)();
+(0,_component_cp_init_page__WEBPACK_IMPORTED_MODULE_2__["default"])();
+let chessGraph = (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_3__.initGraph)();
 let knight = null
 const cases= document.querySelector('.board').querySelectorAll('*')
 
@@ -1254,9 +1248,9 @@ makeMove();
 
 function makeMove()
 {
-    (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_2__.getPositionWanted)()
+    (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_3__.getPositionWanted)()
         .then((position)=>{
-            knight = new _Class_Knight__WEBPACK_IMPORTED_MODULE_0__["default"](position)
+            knight = new _Class_Knight__WEBPACK_IMPORTED_MODULE_1__["default"](position)
             cases.forEach(element => {
                 document.querySelector('.info-display').innerText="Now click on the destination you want to reach !  "
                 let position = element.classList[1].split('/').map((string)=>parseFloat(string))
@@ -1269,7 +1263,7 @@ function makeMove()
             })
         }).
             then(()=>{
-                (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_2__.getPositionWanted)()
+                (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_3__.getPositionWanted)()
                 .then((position) => {
 
                     cases.forEach(element => {
@@ -1344,7 +1338,7 @@ function reset() {
   document.querySelector('.btn').classList.remove('disabled');
 
   // Réinitialisez le graphique, le chevalier, et tout autre état nécessaire
-  chessGraph = (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_2__.initGraph)();
+  chessGraph = (0,_logic_logic_js__WEBPACK_IMPORTED_MODULE_3__.initGraph)();
   knight = null;
 
   makeMove();
